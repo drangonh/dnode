@@ -1,2 +1,1 @@
-# dnode
-node服务
+#koa2+mysql实现restful API
