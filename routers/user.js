@@ -78,6 +78,11 @@ function signIn(phone, pwd) {
     })
 }
 
+router.get("/", (ctx, next) => {
+    ctx.body = "测试";
+});
+
+// /api/users/getCode?phone=15184356799
 router
     .get(`${preUrl}/getCode`, (ctx, next) => { //获取验证码
         console.log(ctx);
@@ -159,4 +164,6 @@ router
             };
         }
     })
-module.exports = router
+module.exports = router;
+
+

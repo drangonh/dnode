@@ -14,9 +14,9 @@ app.use(static(
     path.join(__dirname, staticPath)
 ));
 app.use(koaBody({multipart: true}));
-app.use(async (ctx) => {
-    cors();
-}); // 允许跨域访问
+app.use(cors()); // 允许跨域访问
 app.use(registerRouter());
-app.listen(3000);
-console.log("启动成功 koa is listening in 3000");
+app.listen(3000, async () => {
+    console.log('server is running at http://localhost:3000')
+});
+
