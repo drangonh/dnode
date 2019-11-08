@@ -6,7 +6,7 @@ const local = {
 };
 
 const server = {
-    host: '172.17.0.10',
+    host: 'localhost',
     password: 'Aabcde786676631!',
 };
 
