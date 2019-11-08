@@ -6,7 +6,7 @@ const local = {
 };
 
 const server = {
-    host: 'http://106.54.237.71/',
+    host: '172.17.0.10',
     password: 'Aabcde786676631!',
 };
 
@@ -18,6 +18,6 @@ const config = {
         database: 'koademo',
         ...server
     }
-}
+};
 
 module.exports = config;
